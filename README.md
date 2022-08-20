@@ -1,2 +1,24 @@
-# StarterApp-CoreData-iOS
-Starter app for MOB 2.1 Tutorial
+#MakeSchool Loaner App
+
+This project is a personal loan app that uses CoreData for it's persistence. .
+
+Time spent: Still a work in progress for now :)
+
+## User Stories
+
+The following **required** functionality is completed:
+
+- [] Build out the Core Data Model 
+- [] Create the Managed Object
+- [] Build the Core Data Stack
+- [] Implement Saving Data
+- [] Implement Fetching Data 
+- [] Implement Deleting Data
+
+## Stretch Challenges
+
+- [] Create a new entity on your own and make sure you can save, fetch, and delete through CoreData 
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
