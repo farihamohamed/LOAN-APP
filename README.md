@@ -1,4 +1,4 @@
-##MakeSchool Loaner App
+## MakeSchool Loaner App
 
 This project is a personal loan app that uses CoreData for it's persistence. This project is part of MakeSchool's iOS curriculum.
 
