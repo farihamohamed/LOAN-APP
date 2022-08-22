@@ -9,7 +9,7 @@ Time spent: Still a work in progress for now :)
 The following **required** functionality is completed:
 
 - [X] Build out the Core Data Model 
-- [] Create the Managed Object
+- [X] Create the Managed Object
 - [] Build the Core Data Stack
 - [] Implement Saving Data
 - [] Implement Fetching Data 
