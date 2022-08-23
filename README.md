@@ -2,7 +2,7 @@
 
 This project is a personal loan app that uses CoreData for it's persistence. This project is part of MakeSchool's iOS curriculum.
 
-Time spent: Still a work in progress for now :)
+Time spent: 5 hr
 
 ## User Stories
 
@@ -13,7 +13,7 @@ The following **required** functionality is completed:
 - [X] Build the Core Data Stack
 - [X] Implement Saving Data
 - [X] Implement Fetching Data 
-- [] Implement Deleting Data
+- [X] Implement Deleting Data
 
 ## Stretch Challenges
 

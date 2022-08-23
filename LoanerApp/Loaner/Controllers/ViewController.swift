@@ -84,8 +84,17 @@ class ViewController: UIViewController {
     }
     
     func deleteItem(at index: Int) {
+        
+        let viewContext = store.persistentContainer.viewContext
+        viewContext.delete(items[index])
+        
         items.remove(at: index)
         collectionView.deleteItems(at: [IndexPath(row: index, section: 0)])
+        store.saveContext()
+        
+        
+        
+      
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
