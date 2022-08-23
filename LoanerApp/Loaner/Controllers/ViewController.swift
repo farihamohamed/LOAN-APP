@@ -27,12 +27,16 @@ class ViewController: UIViewController {
         flow.itemSize = CGSize(width: screenSize.width / 2 - horizontalPadding * 2, height: screenSize.width / 2 - verticalPadding * 2)
         flow.sectionInset = UIEdgeInsets(top: verticalPadding, left: horizontalPadding, bottom: verticalPadding, right: horizontalPadding)
         collectionView.collectionViewLayout = flow
+        
+        updateDataSource()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
         store.saveContext()
+        
+        updateDataSource()
          
     }
     
@@ -45,6 +49,30 @@ class ViewController: UIViewController {
         return newItem
         
     }
+    
+    
+   private func updateDataSource(){
+       self.store.fetchPersistedData{
+           (fetchItemsResult) in
+           
+           switch fetchItemsResult{
+               
+           case let .success(items):
+               self.items = items
+           case . failure(_):
+               self.items.removeAll()
+               
+               
+               
+           }
+           self.collectionView.reloadSections(IndexSet(integer:0))
+    }
+    
+}
+    
+    
+    
+    
     
     func add(saved item: Item) {
         items.insert(item, at: 0)
@@ -137,6 +165,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         cell.configure(item)
         
         return cell
+        }
     }
-}
+
 

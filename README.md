@@ -12,7 +12,7 @@ The following **required** functionality is completed:
 - [X] Create the Managed Object
 - [X] Build the Core Data Stack
 - [X] Implement Saving Data
-- [] Implement Fetching Data 
+- [X] Implement Fetching Data 
 - [] Implement Deleting Data
 
 ## Stretch Challenges
