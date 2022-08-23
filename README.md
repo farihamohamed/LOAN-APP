@@ -11,7 +11,7 @@ The following **required** functionality is completed:
 - [X] Build out the Core Data Model 
 - [X] Create the Managed Object
 - [X] Build the Core Data Stack
-- [] Implement Saving Data
+- [X] Implement Saving Data
 - [] Implement Fetching Data 
 - [] Implement Deleting Data
 
